@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./style.css">
+  <title>Profile</title>
+</head>
+
+<body>
+  <div id="test_task">
+    <!-- HEADER -->
+    <header class="header">
+      <div class="header__block">
+        <button class="header__burger"></button>
+        <button class="header__back"></button>
+        <img src="./images/logo.svg" class="logo"></img>
+        <form class="search-bar">
+          <input class="search-input" type="text" placeholder="">
+          <button class="search-button" type="submit"></button>
+        </form>
+        <nav class="navigation">
+          <ul class="navigation__list">
+            <li class="navigation__item navigation__item_person"><a href="#" class="navigation__link"></a></li>
+            <li class="navigation__item navigation__item_favorites"><a href="#" class="navigation__link"></a></li>
+            <li class="navigation__item navigation__item_shopping-cart"><a href="#" class="navigation__link"></a></li>
+          </ul>
+        </nav>
+      </div>
+      <nav class="menu">
+        <ul class="menu__list">
+          <li><a href="#" class="menu__link">каталог</a></li>
+          <li><a href="#" class="menu__link">новинки</a></li>
+          <li><a href="#" class="menu__link">серебро и золото</a></li>
+          <li><a href="#" class="menu__link">для мужчин</a></li>
+          <li><a href="#" class="menu__link">тренды</a></li>
+          <li><a href="#" class="menu__link">дизайнеры</a></li>
+          <li><a href="#" class="menu__link">сертификаты</a></li>
+        </ul>
+      </nav>
+    </header>
+    <!-- MAIN -->
+    <main class="main">
+      <nav class="main-navigation">
+        <ul class="main-navigation__list">
+          <li class="main-navigation__item main-navigation__item_active"><a href="#" class="main-navigation__link"><img
+                src="./images/data-icon-active.svg" alt="" class="main-navigation__image main-navigation__image_active">
+              <p>Данные</p>
+            </a></li>
+          <li class="main-navigation__item"><a href="#" class="main-navigation__link"><img
+                src="./images/delivery-icon.svg" alt="" class="main-navigation__image">
+              <p>Доставка</p>
+            </a></li>
+          <li class="main-navigation__item"><a href="#" class="main-navigation__link"><img
+                src="./images/settings-icon.svg" alt="" class="main-navigation__image">
+              <p>Настройки</p>
+            </a></li>
+          <li class="main-navigation__item"><a href="#" class="main-navigation__link"><img
+                src="./images/support-icon.svg" alt="" class="main-navigation__image">
+              <p>Поддержка</p>
+            </a></li>
+          <li class="main-navigation__item"><a href="#" class="main-navigation__link"><img
+                src="./images/payment-icon.svg" alt="" class="main-navigation__image">
+              <p>Оплата</p>
+            </a></li>
+          <li class="main-navigation__item main-navigation__item_exit"><a href="#" class="main-navigation__link">
+              <p>Выйти</p><img src="./images/exit-icon.svg" alt="" class="main-navigation__image">
+            </a></li>
+        </ul>
+
+      </nav>
+      <section class="profile">
+        <div class="profile__block">
+          <div class="profile__avatar">
+            <img src="./images/avatar.png" alt="" class="profile__photo">
+            <button class="profile__edit-button"></button>
+          </div>
+          <div class="profile__menu">
+            <a href="#" class="profile__menu-item">Ваши адреса</a>
+            <a href="#" class="profile__menu-item">История заказов</a>
+          </div>
+        </div>
+        <div class="about">
+          <h2>О вас</h2>
+          <form action="" class="profile__form">
+            <div class="form__block">
+              <input type="text" class="form__input" required>
+              <label for="" class="form__label">Имя</label>
+            </div>
+            <p class="form__text">Assistive text</p>
+
+            <div class="form__block">
+              <input type="text" class="form__input" required>
+              <label for="" class="form__label">Фамилия</label>
+            </div>
+            <p class="form__text">Assistive text</p>
+
+            <div class="form__block">
+              <input type="text" class="form__input" required>
+              <label for="" class="form__label">Дата рождения</label>
+            </div>
+            <p class="form__text">Assistive text</p>
+          </form>
+          <h2>Контакты</h2>
+          <form action="" class="profile__form">
+            <div class="form__block">
+              <input type="text" class="form__input" required>
+              <label for="" class="form__label">Телефон</label>
+            </div>
+            <p class="form__text">Assistive text</p>
+            <div class="form__block">
+              <input type="text" class="form__input" required>
+              <label for="" class="form__label">Почта</label>
+            </div>
+            <p class="form__text">Assistive text</p>
+          </form>
+        </div>
+      </section>
+
+    </main>
+    <nav class="mobile-navigation">
+      <ul class="mobile-navigation__list">
+        <li class="mobile-navigation__item"><a class="mobile-navigation__link" href="#"><img
+              class="mobile-navigation__image" src="./images/house-icon.svg" alt="">Главная</a></li>
+        <li class="mobile-navigation__item"><a class="mobile-navigation__link" href="#"><img
+              class="mobile-navigation__image" src="./images/burger-menu-icon.svg" alt="">Каталог</a></li>
+        <li class="mobile-navigation__item"><a class="mobile-navigation__link" href="#"><img
+              class="mobile-navigation__image" src="./images/shopping-cart.svg" alt="">Корзина</a></li>
+        <li class="mobile-navigation__item"><a class="mobile-navigation__link" href="#"><img
+              class="mobile-navigation__image" src="./images/favourites-icon.svg" alt="">Избранное</a></li>
+        <li class="mobile-navigation__item"><a class="mobile-navigation__link mobile-navigation__link_active" href="#"><img
+              class="mobile-navigation__image" src="./images/person-icon-active.svg" alt="">Профиль</a></li>
+      </ul>
+    </nav>
+    <!-- FOOTER -->
+    <footer>
+
+    </footer>
+  </div>
+</body>
+
+</html>
